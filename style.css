@@ -2,32 +2,149 @@ body {
     background-color: white;
 }
 
+/* Colors */
+
+.brand-1 {
+    color: #050505;
+}
+
+.brand-2 {
+    color: #fffbf0;
+}
+
+.accent-1 {
+    color: #e9b940;
+}
+
+.accent-2 {
+    color: #515c3d;
+}
+
+.accent-3 {
+    color: #ed1f0f;
+}
+
+.accent-4 {
+    color: #8c5c15;
+}
+
+/* Typography */
+
+h1,
+.h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 50pt;
+}
+
+h1,
+h2,
+.h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 38pt;
+}
+
+h1,
+h2,
+h3,
+.h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 32pt;
+}
+
+p,
+.p {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 14pt;
+}
+
+.body {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+    background-color: #fff;
+}
+
+.sub-head {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+.caption-copy {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    font-size: 16pt;
+}
+
+.mont-thin {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.mont-reg {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+.pt-serif-bold {
+    font-family: 'PT Serif', serif;
+    font-weight: 700;
+}
+
+/* Navigation */
+
 .navbar {
     background-color: white;
 }
 
 .navbar-brand {
-    color: lightblue;
+    color: #e9b940;
 }
 
+/* Jumbotron */
 
 .jumbotron {
     background-color: gray;
     height: 730px;
 }
 
-h1 {
+/* Margins, Padding, Text-Align */
+
+.margin-left-20 {
+    margin-left: 20px;
+}
+
+.margin-left-50 {
     margin-left: 50px;
 }
 
-h2 {
+.text-align-center {
     text-align: center;
 }
 
-p {
-    margin-left: 20px;
-    font-size: 16px;
+.pt-5 {
+    padding-top: 5rem;
 }
+
+.pb-5 {
+    padding-bottom: 5rem;
+}
+
+.pl-5 {
+    padding-left: 5rem;
+}
+
+.pr-5 {
+    padding-right: 5rem;
+}
+
+
+/* Carousel */
 
 .carousel {
     height: 500px;
@@ -42,22 +159,13 @@ p {
     height: 400px;
 }
 
-.container {
-    height: 300px;
-    width: 100%;
-    margin-top: 20px;
-    position: relative;
-}
-
-.row {
-    height: 200px;
-}
-
 .img-circle {
     display: block;
     width: 100%;
     height: auto;
 }
+
+/* Footer */
 
 .footer {
     width: 100%;
