@@ -16,7 +16,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     
     <!-- Google Fonts Stylesheet -->
-    <link>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+
 
     <!-- stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -28,31 +30,128 @@
     <nav class="navbar navbar-fixed-top">
         <div class="container-fluid">
             <div class="navbar-header">
-                <a class="navbar-brand" href="#page-top">Appalachian Cuisine</a>
-                <a class="navbar-brand" href="#tradition">Tradition</a>
-                <a class="navbar-brand" href="#connection">Connection</a>
-                <a class="navbar-brand" href="#food">Food</a>
-                <a class="navbar-brand" href="#more">More</a>
+                <a class="navbar-brand mont-reg" href="#page-top">Appalachian Cuisine</a>
+                <a class="navbar-brand mont-reg" href="#tradition">Tradition</a>
+                <a class="navbar-brand mont-reg" href="#connection">Connection</a>
+                <a class="navbar-brand mont-reg" href="#food">Food</a>
+                <a class="navbar-brand mont-reg" href="#more">More</a>
             </div> 
         </div>
     </nav>
 
     <!-- header -->
-    <div class="jumbotron text-left">
-        <div class="container">
+    <header>
+        <div class="overlay"></div>
+        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="1446px" height="848px">
+            <source src="css/images/BurkMartinsdeSa_Project1.mp4" type="video/mp4">
+        </video>
+        <div class="container h-100">
+            <div class="h-100 text-center align-items-center">
+                <div class="w-100 text-white">
+                    <h1 class="display-3">Appalachain Cuisine</h1>
+                    <p class="lead mb-0">Subhead Here</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Cards -->
+    <section>
             <div class="row">
-                <h1>Appalachian Cuisine</h1>
-                <p>Insert Image Background Here</p>
+                 <div class="col-md-4">
+                    <img src="css/images/woman.jpg" alt="" width="482" height="700">
+                </div>
+                <div class="col-md-4">
+                    <img src="css/images/anita.jpg" alt="" width="482" height="700">
+                </div>
+                <div class="col-md-4">
+                    <img src="css/images/man.jpg" alt="" width="482" height="700">
+                </div>
+            </div>
+    </section>
+
+    <!-- Profile Cards
+
+    <div class="containter-fluid">
+        <div class=" row text-white">
+            <div class="col-lg-4 bkgd-image-1 button1 hoverprofile1">
+                <a href="#tradition" class="invisibleLink"></a>
+                <div class="container">
+                    <a href="#tradition" class="btn btn-primary-profile h2" role="button" aria-pressed="true">
+                        <span>
+                            "MARY JANE"
+                            ::after
+                        </span>
+                    </a>
+                </div>
+                <div class="overlay-profile1"></div>
+            </div>
+            <div class="col-lg-4 bkgd-image-2 button2 hoverprofile2">
+                <a href="#connection" class="invisibleLink"></a>
+                <div class="container">
+                    <a href="#tradition" class="btn btn-primary-profile h2" role="button" aria-pressed="true">
+                        <span>
+                            "ANITA"
+                            ::after
+                        </span>
+                    </a>
+                </div>
+                <div class="overlay-profile2"></div>
+            </div>
+            <div class="col-lg-4 bkgd-image-3 button3 hoverprofile3">
+                <a href="#food" class="invisibleLink"></a>
+                <div class="container">
+                    <a href="#tradition" class="btn btn-primary-profile h2" role="button" aria-pressed="true">
+                        <span>
+                            "NAME"
+                            ::after
+                        </span>
+                    </a>
+                </div>
+                <div class="overlay-profile3"></div>
             </div>
         </div>
     </div>
+     -->
+
 
     <!-- Tradition -->
     <section id="tradition">
-        <div class="containter">
+        <div class="containter pt-5 pl-5 pr-5 pb-5">
             <div class="row">
                 <div class="col">
                     <h1>Tradition</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/food-1.jpg" width="80%" height="80%" class="float-left">
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="pt-5 pb-5">
+                    <div class="embed-responsive embed-responsive-16by9"> 
+                        <video width="320" height="240" controls>
+                            <source src="css/images/BurkMartinsdeSa_Project1.mp4" type="video/mp4">
+                        </video>
+                    </div> 
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
@@ -97,10 +196,41 @@
 
     <!-- Connection -->
     <section id="connection">
-        <div class="containter">
+        <div class="containter pt-5 pl-5 pr-5 pb-5">
             <div class="row">
                 <div class="col">
                     <h1>Connection</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/food-1.jpg" width="80%" height="80%" class="float-left">
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="pt-5 pb-5">
+                    <div class="embed-responsive embed-responsive-16by9"> 
+                        <video width="320" height="240" controls>
+                            <source src="css/images/BurkMartinsdeSa_Project1.mp4" type="video/mp4">
+                        </video>
+                    </div> 
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
@@ -145,10 +275,33 @@
 
     <!-- Food -->
     <section id="food">
-        <div class="containter">
+        <div class="containter pt-5 pl-5 pr-5 pb-5">
             <div class="row">
                 <div class="col">
                     <h1>Food</h1>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="css/images/food-1.jpg" width="80%" height="80%" class="float-left">
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div class="col-md-8">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+
+                <div>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </div>
             </div>
@@ -191,24 +344,7 @@
         </div>
     </div>
 
-    <!-- More -->
-    <section id="more">
-        <div class="container">
-            <h1>More</h1>
-            <h2>What's On The Menu?</h2>
-            <div class="row">
-                 <div class="col-sm-4">
-                    <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="img-circle" alt="" width="310" height="230">
-                </div>
-                <div class="col-sm-4">
-                    <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="img-circle" alt="" width="310" height="230">
-                </div>
-                <div class="col-sm-4">
-                    <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" class="img-circle" alt="" width="310" height="230">
-                </div>
-            </div>
-        </div>
-    </section>
+    
 
     <!-- Footer -->
     <footer>
