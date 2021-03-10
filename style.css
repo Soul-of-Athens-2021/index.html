@@ -143,6 +143,10 @@ p,
     padding-right: 5rem;
 }
 
+.col-lg-12 {
+    width: 100%;
+}
+
 
 /* Carousel */
 
