@@ -1,0 +1,319 @@
+/* color vars */
+:root {
+	--main-color: #fff;
+	--dk-color: #36393e;
+	--md-color: #5a554c;
+	--lt-color: #a8dff8;
+	--lt-lt-color: #daf3ff;
+	--white: #eee;
+	--black: #222;
+}
+
+
+/* google font style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand {
+	font-family: 'Raleway', sans-serif;
+	font-weight: 800;
+	letter-spacing: 1px;
+}
+
+h5,
+h6 {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	padding-top: 0.3rem;
+}
+
+
+/* media query related styles */
+/* styles for extra-small (mobile) devices */
+h1 {
+	font-size: 4rem;
+	line-height: 2.7rem;
+	letter-spacing: 1px;
+	text-align: left;
+}
+
+header {
+	padding: 2rem 1rem 1.5rem;
+}
+
+section {
+	padding: 2rem 1rem 2.2rem;
+}
+
+footer {
+	padding: 2rem 1rem 4rem;
+}
+
+/* styles for small devices */
+@media (min-width: 300px) {
+	h1 {
+		font-size: 3rem;
+		line-height: 3rem;
+		letter-spacing: .5px;
+		text-align: left;
+		margin-top: 30px;
+	}
+
+	.art-img-2 img {
+		width: 200px;
+	}
+
+	header {
+		padding: 2rem 2rem 1.5rem;
+	}
+
+	section {
+		padding: 3.5rem 2rem 4rem;
+	}
+
+	footer {
+		padding: 1.5rem 2rem 2.5rem;
+	}
+}
+
+@media (min-width: 576px) {
+	h1 {
+		font-size: 4rem;
+		line-height: 4rem;
+		letter-spacing: 1px;
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.art-img-2 img {
+		float: left;
+		width: 150px;
+		margin-right: 10px;
+	}
+
+	header {
+		padding: 4rem 4rem 3rem;
+	}
+
+	section {
+		padding: 7rem 4rem 8rem;
+	}
+
+	footer {
+		padding: 3rem 4rem 5rem;
+	}
+}
+
+/* styles for medium devices */
+@media (min-width: 768px) {
+	h1 {
+		line-height: 4.8rem;
+		letter-spacing: .75px;
+		text-align: left;
+		margin-top: 0;
+	}
+
+	.art-img-2 {
+		float: left;
+		width: 100px;
+		margin-right: 10px;
+	}
+
+	header {
+		padding: 6rem 7rem 5rem;
+	}
+
+	section {
+		padding: 6rem 7rem 8rem;
+	}
+
+	footer {
+		padding: 3rem 7rem 5rem;
+	}
+}
+
+
+/* styles for large devices */
+@media (min-width: 992px) {}
+
+/* styles for extra-large devices */
+@media (min-width: 1200px) {}
+
+
+/* body margin used to offset height of navbar */
+body {
+	margin-top: 56px;
+}
+
+
+/* nav */
+.nav-pills .nav-link.active {
+
+	background-color: var(--md-color);
+}
+
+.navbar-nav .nav-link {
+	padding-left: 14px;
+	color: #ABABAB;
+	font-weight: bold;
+}
+
+
+/* colors */
+.dk-color {
+	background-color: var(--dk-color);
+}
+
+.lt-color {
+	background-color: var(--md-color);
+}
+
+.xlt-color {
+	background-color: var(--lt-color);
+}
+
+.black-type {
+	color: #000000;
+}
+
+.grey-type {
+	color: #36393e;
+}
+
+.yellow-type {
+	color: #f5b50b;
+}
+
+.lite-gold-type {
+	color: #bd8848;
+}
+
+
+/* cards */
+.card {
+	padding: 0.7rem;
+	margin-bottom: 2rem;
+	border: 0;
+	background-color: var(--lt-lt-color);
+}
+
+.card>img {
+	margin-bottom: 0.75rem;
+}
+
+.card-text {
+	font-size: 95%;
+}
+
+
+/* footer */
+.dark-footer {
+	background-color: var(--dk-color);
+	color: var(--white);
+	padding-top: 2rem;
+	padding-bottom: 4rem;
+	min-height: 300px;
+}
+
+.dark-footer a {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.dark-footer a:hover {
+	color: var(--white);
+	text-decoration: underline;
+}
+
+.story-pro-head {
+	padding-top: 100px;
+	margin-bottom: -100px;
+	font-family: Montserrat;
+	font-weight: 900;
+	color: #ffffff;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.pull-quote-cap {
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	font-size: 30px;
+	margin-top: 30px;
+	margin-left: 0px;
+}
+
+.more-padding {
+	padding-top: 75px;
+}
+
+.more-padding2 {
+	padding-top: 150px;
+}
+
+.xtra-padding {
+	padding-bottom: 75px;
+}
+
+.extra-padding {
+	padding-bottom: 300px;
+}
+
+.story-pro-subhead {
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+}
+
+.subhead2 {
+	font-family: Montserrat;
+	font-weight: 900;
+	color: #f5b50b;
+	font-size: 50px;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+}
+
+.story-pro-subhead2 {
+	font-size: 20px;
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	color: #ffffff;
+	text-shadow: 2px 2px 4px #000000;
+	text-align: center;
+}
+
+/* background images */
+.img-1 {
+	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	opacity: 1.0;
+	background-color: #aaa;
+	height: 500px;
+	background-position: top;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-2 {
+	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	opacity: 1.0;
+	background-color: #aaa;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.img-3 {
+	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	opacity: 1.0;
+	background-color: #aaa;
+	height: 500px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

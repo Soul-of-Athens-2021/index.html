@@ -1,324 +1,901 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Appalachian Cuisine</title>
 
-    <!-- Required Meta Tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Appalachian Cuisine</title>
+  <!-- Bootstrap CSS -->
+  <link href='https://unpkg.com/bootstrap/dist/css/bootstrap.min.css' rel='stylesheet' />
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- Google Fonts stylesheet -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700,800,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700&display=swap" rel="stylesheet">
+  <!-- stylesheet -->
+  <link href="css/scrolling.css" rel="stylesheet">
 
-    <!-- unsure what this is -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <!-- Google Fonts Stylesheet -->
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&family=PT+Serif:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+  <!-- internal CSS styles -->
+  <style>
+    /*img slide animations*/
+    .img-pos {
+      position: relative;
+      left: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .img-pos-2 {
+      left: 0px;
+      opacity: 1;
+    }
+
+    .image-pos {
+      position: relative;
+      right: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-2 {
+      right: 0px;
+      opacity: 1;
+    }
+
+    .imag-pos-3 {
+      position: relative;
+      left: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-3 {
+      right: 0px;
+      opacity: 1;
+    }
+
+    .imag-pos-4 {
+      position: relative;
+      right: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-4 {
+      right: 0px;
+      opacity: 1;
+    }
+
+    .imag-pos-6 {
+      position: relative;
+      left: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-6 {
+      left: 0px;
+      opacity: 1;
+    }
 
 
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="css/style.css">
+    .imag-pos-5 {
+      position: relative;
+      left: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-5 {
+      right: 0px;
+      opacity: 1;
+    }
+
+
+    .imag-pos-7 {
+      position: relative;
+      left: 50px;
+      opacity: 0;
+      */ -webkit-transition: all 0.5s;
+      transition: all 0.5s;
+    }
+
+    .image-pos-7 {
+      right: 0px;
+      opacity: 1;
+    }
+
+    /*navigation styles*/
+    .navicon {
+      width: 200px;
+    }
+
+    .nav-bkgd {
+      background-color: #2b2d2f;
+    }
+
+    .nav-color {
+      color: #fff;
+      text-decoration: none;
+      background-color: #fff;
+    }
+
+    /*background images*/
+    .bkgd-img {
+      background-image: url(imgs/018.jpg);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      min-height: 500px;
+    }
+
+    /*article text*/
+    .body-reg {
+      font-family: 'Roboto'sans-serif;
+      font-size: 1.15rem;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .left-body-1 {
+      font-family: 'Roboto'sans-serif;
+      font-size: 1.15rem;
+      text-align: left;
+    }
+
+    .left-body-2 {
+      font-family: 'Roboto'sans-serif;
+      font-size: 1.15rem;
+    }
+
+    .left-body-3 {
+      font-family: 'Roboto'sans-serif;
+      font-size: 1.15rem;
+      margin-right: 120px;
+      margin-right: 20px;
+    }
+
+    .right-body-1 {
+      font-family: 'Roboto'sans-serif;
+      font-size: 1.15rem;
+      text-align: left;
+    }
+
+    .right-caption {
+      float: right;
+      font-family: 'Roboto'sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+    }
+
+    .left-caption {
+      float: right;
+      font-family: 'Roboto'sans-serif;
+      font-size: 1rem;
+      font-style: italic;
+      font-weight: normal;
+      font-size: 14px;
+      text-align: left;
+    }
+
+    .cap {
+      font-weight: normal;
+    }
+
+    .feature-heading {
+      font-weight: 700;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Raleway'sans-serif;
+    }
+
+    .feature-heading-2 {
+      font-weight: 700;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Raleway'sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .feature-heading-3 {
+      font-weight: 700;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Raleway'sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .feature-heading-4 {
+      font-weight: 700;
+      text-align: left;
+      font-size: 20px;
+      font-family: 'Raleway'sans-serif;
+      margin-bottom: 10px;
+    }
+
+    .pull-quote-1 {
+      float: right;
+      text-align: left;
+      font-size: 35px;
+      font-weight: 700;
+      font-style: italic;
+      margin-top: 40px;
+    }
+
+    .pull-quote-2 {
+      float: right;
+      text-align: left;
+      font-size: 30px;
+      font-weight: 700;
+      font-style: italic;
+      margin-right: 95px;
+      margin-left: -120px;
+      margin-top: 30px;
+    }
+
+    .pull-quote-3 {
+      text-align: left;
+      font-size: 20px;
+      font-weight: 700;
+      font-style: italic;
+      margin-left: -50px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    /*article images*/
+    .art-img-1 {
+      float: right;
+      margin-left: 10px;
+      width: 800px;
+    }
+
+    .art-img-2 {
+      float: left;
+      width: 200px;
+      margin-right: 15px;
+    }
+
+    .art-img-3 {
+      float: right;
+      width: 250px;
+      margin-left: -30px;
+      padding-right: 55px;
+    }
+
+    .art-img-4 {
+      float: left;
+      width: 400px;
+      margin-left: -50px;
+      margin-right: 75px;
+    }
+
+    .art-img-5 {
+      float: right;
+      width: 600px;
+      margin-left: 100px;
+
+      margin-bottom: 5px;
+    }
+
+    .art-img-6 {
+      width: 600px;
+      margin-bottom: 5px;
+
+    }
+
+    .art-img-7 {
+      float: right;
+      margin-bottom: 5px;
+      margin-right: 50px;
+      margin-left: 10px;
+    }
+
+    /*spacing*/
+    .merge {
+      margin-top: 30px;
+    }
+
+    .break {
+      margin-bottom: 50px;
+    }
+
+    .big {
+      font-size: 2rem;
+      line-height: 10px;
+    }
+
+    .med {
+      font-size: 1.5rem;
+    }
+
+    .xtra-padding {
+      padding-right: 30px;
+    }
+
+    .vid iframe {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+    }
+
+    /*footer*/
+    .bkgd-dark {
+      background-color: #212529;
+    }
+
+
+    .ParallaxVideo {
+      overflow: hidden;
+      height: 700px;
+      padding: 0;
+      margin: 0;
+      opacity: 50%;
+    }
+
+    .ParallaxVideo iframe {
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      left: -25%;
+      width: 150%;
+      height: 150%;
+      z-index: -1;
+      padding: 0;
+      margin: 0;
+    }
+
+    @media (max-width: 965px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 400px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 699px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 300px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 545px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 250px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 432px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 200px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 355px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 175px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    @media (max-width: 300px) {
+      .ParallaxVideo {
+        overflow: hidden;
+        height: 150px;
+        padding: 0;
+        margin: 0;
+      }
+    }
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show .nav-link {
+      color: #fff;
+      background-color: #536872;
+    }
+
+    .btn-brown {
+      background-color: #8c5b16;
+    }
+
+    .navbar-dark .navbar-nav .nav-link {
+      color: #f5b50b;
+    }
+
+    a {
+      color: #536872;
+      text-decoration: none;
+      background-color: transparent;
+    }
+
+    .nav-bkgd {
+      background-color: #4e5c39;
+    }
+
+    .navicon {
+      width: 25%;
+      margin-left: none;
+    }
+
+    .storyimg img {
+      width: 75%;
+      opacity: 50%;
+    }
+
+    .storyimg {
+      position: relative;
+    }
+
+    .storyimg h3 {
+      margin-top: 150px;
+      color: #ffffff;
+    }
+
+    .centered {
+      text-align: center;
+    }
+
+    .storyimg>img,
+    .overlay-text p {
+      text-align: center;
+      padding: 2rem;
+      padding-top: 110px;
+    }
+
+    .bg-color {
+      background-color: #4e5c39;
+    }
+
+    .bg-color2 {
+      background-color: #ffffff;
+    }
+
+    hr {
+      background-color: #ffffff !important;
+      color: #ffffff !important;
+      border: solid 1px #ffffff !important;
+      width: 180px !important;
+      margin-top: 1px;
+      text-shadow: 2px 2px 4px #000000;
+    }
+
+    .btn {
+      color: #ffffff;
+    }
+
+    .parallax-img-1 {
+      background-image: url(imgs/Swanson_SOA_03062021_Anita-20.jpg);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+    }
+
+    .parallax-img-2 {
+      background-image: url(imgs/Burk_Kaylor-6-1.JPG);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+    }
+
+    .anita hr {
+      width: 300px;
+    }
+  </style>
+
 </head>
 
 <body id="page-top">
 
-    <!-- navigation -->
-    <nav class="navbar navbar-fixed-top">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand mont-reg" href="#page-top">Appalachian Cuisine</a>
-                <a class="navbar-brand mont-reg" href="#tradition">Tradition</a>
-                <a class="navbar-brand mont-reg" href="#connection">Connection</a>
-                <a class="navbar-brand mont-reg" href="#food">Food</a>
-                <a class="navbar-brand mont-reg" href="#more">More</a>
-            </div> 
-        </div>
-    </nav>
+  <!-- navigation -->
+  <nav class="navbar navbar-expand-md nav-bkgd fixed-top" id="mainNav">
+    <div class="container-fluid">
 
-    <!-- header -->
-    <header>
-        <div class="overlay"></div>
-        <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop" width="1446px" height="848px">
-            <source src="videos/SOA_Cuisine_Grandma_BrollRoughCut.mp4" type="video/mp4">
-        </video>
-        <div class="overlay">
-            <h1>Appalachian Cuisine</h1>
-            <h2>Subhead Here</h2>
-        </div>
-    </header>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        <!--<img src="imgs/npr-logo.jpg"  class="navicon"> --></a>
+      <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+        aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <div class="col-md-4">
-        <img src="images/Swanson_SOA_Anita-22.jpg" alt="Avatar" class="image" style="width:100%" height="700">
-        <div class="middle">
-          <div class="text" href="#tradition">Story 1</div>
+      <div class="navbar-collapse collapse" id="navbarResponsive">
+        <ul class="navbar-nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#community">Community</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#tradition">Tradition</a>
+          </li>
+        </ul>
+        <!-- Community scrollspy animation triggers -->
+        <a class="nav-link js-scroll-trigger" href="#anita"></a>
+        <a class="nav-link js-scroll-trigger" href="#anita1"></a>
+        <a class="nav-link js-scroll-trigger" href="#anita_subhead"></a>
+        <a class="nav-link js-scroll-trigger" href="#anita2"></a>
+        <a class="nav-link js-scroll-trigger" href="#anita3"></a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- header -->
+  <div class="row">
+    <div class="col-12 ParallaxVideo">
+      <!-- <video src="https://player.vimeo.com/external/264895521.hd.mp4?s=f7507a295ebed8e101110c48dd911fe56c17ca48&profile_id=174" autoplay muted loop>
+        </video> -->
+      <img src="imgs/head_img.png">
+      <iframe src="https://player.vimeo.com/video/526291903?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+        frameborder="0" autoplay="autoplay" muted="muted" loop="loop">
+      </iframe>
+    </div>
+  </div>
+
+
+  <div class="wrapper bg-color">
+    <div class="container-fluid no-margin v-fill">
+      <div class="row v-fill lighter more-padding justify-content-center align-items-end">
+        <div class="col-12 v-fill">
+          <div class="row padding-bottom">
+            <div class="col-4 xtra-padding">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front img-2 overlay-text text-center">
+                    <h2 class="story-pro-head">COMMUNITY
+                      <hr>
+                      </hr>
+                    </h2>
+                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit.
+                    </p>
+
+                    <a class="btn btn-brown btn-sm" href="#community" role="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 xtra-padding">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front img-2 overlay-text text-center">
+                    <h2 class="story-pro-head">TRADITION
+                      <hr>
+                      </hr>
+                    </h2>
+                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit.
+                    </p>
+
+                    <a class="btn btn-brown btn-sm" href="about" role="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-4 xtra-padding">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front img-2 overlay-text text-center">
+                    <h2 class="story-pro-head">FOOD
+                      <hr>
+                      </hr>
+                    </h2>
+                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
+                      elit.
+                    </p>
+
+                    <a class="btn btn-brown btn-sm" href="#about" role="button">Read More</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!-- community -->
+  <div class="container-fluid parallax-img-1" id="community">
+    <div class="row anita">
 
-      <div class="col-md-4">
-        <img src="images/anita.jpg" alt="Avatar" class="image" style="width:100%" height="700">
-        <div class="middle">
-          <div class="text href="#connection">Story 2</div>
+      <div class="col-md-12 center">
+
+        <h2 class="subhead2 more-padding2">MORE THAN A MEAL</h2>
+        <hr>
+        </hr>
+        </h2>
+        <p class="story-pro-subhead2">SOUTHEASTERN OHIO CHEF ANITA HAJIVANDI LEADS HER HOMETOWN FOOD PANTRY
+        </p>
+      </div>
+    </div>
+  </div>
+  <section class="bg-color2">
+    <div class="container-fluid">
+      <div class="row">
+
+        <div class="col-12 white-type">
+          <p class="left-body-1 black-type">The Savory Aroma of pork and Sausage, the sight of sweet sorghum
+            molasses mixed with creamy butter, and the taste of it all transports Anuita Hajvandi
+            baclk to the kitchen of her rural Appalachian home where her grandmother would cook
+            hearty and traditional meals from recipes passed down through generations. </p>
+          <p class="left-body-1 black-type">Today, Hajivandi spreadas the warmth and comfort of homemade cuisine to
+            as many people as she can</p>
+          <p class="right-body-1 black-type">The culinary saint can often be found at the River of Life
+            church in Rutland, Ohio where she co-directs the church's food pantry with her husband, Moe.
+            But to the frequent visitors of the food pantry, she providees more than just packages of
+            non-perishable items - she also serves up good, old-fashioned, homemade meals.</p>
         </div>
       </div>
+    </div>
+    <div class="container" id="anita1">
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="pull-quote-1 grey-type image-pos"><span class="yellow-type big">"</span>I love coooking. I enjoy
+            helping people you know, thats why I think
+            I'm drawn to the food pantry<span class="yellow-type big">"</span>
 
-      <div class="col-md-4">
-        <img src="images/anita.jpg" alt="Avatar" class="image" style="width:100%" height="700">
-        <div class="middle">
-          <div class="text href="#food">Story 3</div>
+            <p class="pull-quote-cap image-pos">-Anita
+              Hajivandi</p>
+        </div>
+        <div class="col-lg-8 white-type image-pos merge">
+          <img class="img-fluid img-pos art-img-1" src="imgs/Swanson_SOA_Anita-12.jpg" alt="anita in the kitchen">
         </div>
       </div>
-
-
-    <!-- Tradition -->
-    <section id="tradition">
-        <div class="containter pt-5 pl-5 pr-5 pb-5">
-            <div class="row">
-                <div class="col">
-                    <h1>Tradition</h1>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="images/food-1.jpg" width="80%" height="80%" class="float-left">
-                </div>
-
-                <div class="col-md-8">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="embed-responsive embed-responsive-16by9"> 
-                        <video width="320" height="240" controls>
-                            <source src="videos/SOA_Cuisine_Grandma_BrollRoughCut.mp4" type="video/mp4">
-                        </video>
-                    </div> 
-                </div>
-
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-
-                <div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="carousel">
-        <div id="myCarousel" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-slide-to="1"></li>
-                <li data-target="#myCarousel" data-slide-to="2"></li>
-            </ol>
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner">
-                <div class="item active">
-                    <img src="https://images.unsplash.com/photo-1613976132984-1854eff7a5a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80" alt="Moss" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="https://images.unsplash.com/photo-1614197275123-d9a6b333653e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trees" style="width:100%;">
-                </div>
-
-                <div class="item">
-                    <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Sunset" style="width:100%;">
-                </div>
-            </div>
-
-            <!-- Left and right controls -->
-            <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                <span class="sr-only">Previous</span>
-            </a>
-            <a class="right carousel-control" href="#myCarousel" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right"></span>
-                <span class="sr-only">Next</span>
-            </a>
-        </div>
     </div>
+  </section>
 
-  <!-- Connection -->
-  <section id="connection">
-    <div class="containter pt-5 pl-5 pr-5 pb-5">
-        <div class="row">
-            <div class="col">
-                <h1>Connection</h1>
-            </div>
-
-            <div class="col-md-4">
-                <img src="images/food-1.jpg" width="80%" height="80%" class="float-left">
-            </div>
-
-            <div class="col-md-8">
-                <p>On occasion, we may get more than what we ask for. In the case of Anita Hajivandi, she makes an effort to provide more than just the packages of food for those visiting the food pantry she co-directs with her husband, Moe, from the River of Life church in southeastern Rutland, Ohio, just a few miles from the Ohio River bordering West Virginia. There’s a reassurance that beyond the food that helps visitors get through eachweek, there’s a connection that some may be longing for. Hajivandi is certain that, with food, there is always that bond you form with one another. No matter how the food is prepared or how it’s received, it’s a gift that comes with no strings attached -- just the natural act of giving and receiving.</p>
-                <p>A native of the area in the foot hills of Appalachia, Hajivandi is all too familiar with the region she grew up in. “I grew up on a great farm... a hundred acres. We ran wild... I had a great life,” she says, reminiscing on her adolescent years. “I really embraced it. I think it was a wonderful childhood. It was a childhood of work... you work hard, you play hard.”</p>
-                <p>Amid fond memories of picking blackberries in the summertime and adjusting to life at Ohio University, Anita fell into the culinary arts-- something that combined her creative and mechanical spirit. She may have the ability to execute any dish from any cultural origin from around the globe, but it’s the food she grew up within Appalachia that stuck to her ribs the most. The typical breakfast prepared for her while growing up was coffee-fried pork with cured ham, sausage gravy and biscuits, fried apples and eggs with a cup of coffee that would be poured into the saucer, then back into the cup, proving an effective way to cool the piping hot beverage. This was a staple meal made for coal miners, accordingto Hajivandi. They needed a big, filling breakfast before indulging in a day of hard work, but the same goes for school children and anyone who was in need of a full stomach. The food prepared was in accordance with the surrounding environment, like every staple dish is created. Growing up with a single mother and her grandparents, there was no influx of money pouring into her life. Going out to restaurants was never an option while living in rural Appalachia. The food she ate, like many other Appalachians, was harvested in the summer and preserved for the fall and winter. It was the standard. The change of seasons controlled what was on the plate and with these memories of life on the farm draws a greater significance to the cuisine that Hajivandi still prepares today. One’s senses instantly take them back to a memory when it’s triggered by that one thing, and it’s the smell of pork and sausage, the look of the sorghum molasses combined with butter and the taste of it all that allows Anita to see her grandmother in the food she cooks. With the food we prepare and eat, it’s a gateway to an open table. Perhaps this is why Hajivandi dedicates her time with the food pantry. Before the coronavirus altered life as we knew it, her culinary skills were brought to the kitchen to prepare meals for visitors to enjoy and open the doors to the church for everyone to come in for a feast. Bringing together the community with food is one thing, but to cook the food with love in this sense carries a meaning greater than anything else. It’s cooking with intention that creates the connection.</p>
-            </div>
-
-            <div class="col-lg-12">
-                <div class="embed-responsive embed-responsive-16by9"> 
-                    <video width="320" height="240" controls>
-                        <source src="videos/SOA_Cuisine_Grandma_BrollRoughCut.mp4" type="video/mp4">
-                    </video>
-                </div> 
-            </div> 
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Carousel 2 -->
-<div class="carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="https://images.unsplash.com/photo-1613976132984-1854eff7a5a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80" alt="Moss" style="width:100%;">
-            </div>
-
-            <div class="item">
-                <img src="https://images.unsplash.com/photo-1614197275123-d9a6b333653e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trees" style="width:100%;">
-            </div>
-
-            <div class="item">
-                <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Sunset" style="width:100%;">
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-
- <!-- Food -->
- <section id="food">
-    <div class="containter pt-5 pl-5 pr-5 pb-5">
-        <div class="row">
-            <div class="col">
-                <h1>Food</h1>
-            </div>
-
-            <div class="col-md-4">
-                <img src="images/food-1.jpg" width="80%" height="80%" class="float-left">
-            </div>
-
-            <div class="col-md-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <div class="col-md-8">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-
-            <div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Carousel 3 -->
-<div class="carousel">
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <!-- Indicators -->
-        <ol class="carousel-indicators">
-            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#myCarousel" data-slide-to="1"></li>
-            <li data-target="#myCarousel" data-slide-to="2"></li>
-        </ol>
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-            <div class="item active">
-                <img src="https://images.unsplash.com/photo-1613976132984-1854eff7a5a0?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80" alt="Moss" style="width:100%;">
-            </div>
-
-            <div class="item">
-                <img src="https://images.unsplash.com/photo-1614197275123-d9a6b333653e?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Trees" style="width:100%;">
-            </div>
-
-            <div class="item">
-                <img src="https://images.unsplash.com/photo-1614173724299-984f1bcc2d87?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1650&q=80" alt="Sunset" style="width:100%;">
-            </div>
-        </div>
-
-        <!-- Left and right controls -->
-        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-        </a>
-        <a class="right carousel-control" href="#myCarousel" data-slide="next">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-        </a>
-    </div>
-</div>
-
-    <div class="footer">
-        <p>Ohio University Soul of Athens © 2021</p>
-        <button onclick="topFunction()" id="myBtn" title="Go to top">Back to Top</button>
+  <section id="anita" class="bg-color2">
+    <div class="container-fluid">
+      <div class="col-12">
+        <img src="imgs/Swanson_SOA_Anita-5.jpg" class="art-img-4 imag-pos-3" alt="anita and her husband">
+        <p class="black-type left-body-2">
+          "I love coooking. I enjoy helping people you know, thats why I think
+          I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
+          really. And truly, I never dremaed I'd be managing a food pantry. But it's very
+          satisfying to know that you made a differenece".
+        </p>
+        <p></p>
       </div>
+      <div class="col">
+        <p class="left-body-2 white-type ">
+          "Hajivandi said her cooking offers the reassurance that visitors need to get through each weel and a
+          connection that some may be longing for. She is certain that good food fosters a bond between those who share
+          a meal together. No matter how the food is prepared or how it's recieved, it a gift that come with no strings
+          attached - its about the natural act of giving and receiving."</p>
+        <p></p>
+        <p class="right-body-1 white-type">
+          "I think some of the greatest joys I've had have been when I've cooked for people," she said. "I've made a lot
+          of friends... most people live the food I cook."
+        </p>
+        <p></p>
+        <p class="right-body-1 white-type">
+          A native of Rutland, Hajivandi is all too familiar with the region in which she was raised by her mother and
+          grandparents.
+        </p>
+        <p class="right-body-1 white-type">
+          "I grew up on a great farm... a hundred acres. We ran wild... I had a Great life," she said, reminiscing her
+          adolescent years. "I really embrace it. I think it was a wonderful childhood. It was a childhood of work...
+          you work hard, you play hard"
+        </p>
+        <p class="right-body-1 white-type">
+          "Growing up there was no influx of money pouring into Hajivandi's life, so going out to restaurants wasn't an
+          option. The food she ate, like many other Appalachians, was harvested in the summer and preserved for fall and
+          winter. It was the standard. The change of seasons controlled what was on the plate.
+        </p>
+        <p class="right-body-1 white-type">
+          But no matter the time of the year, the breakfast spread Hajivandi enjoyed as a child "seven days a week"
+          included coffee-fired pork with cured ham, sausage gravy biscuits, fired apples and eggs paired with a piping
+          hot cup of coffee. To cool it down, hajivandi was taught to first pout the coffee into a saucer, then back
+          into its cup.
+        </p>
+      </div>
+    </div>
+  </section>
 
+
+
+  <section id="anita_subhead">
+    <div class="container">
+      <div clas="row">
+        <div class="col-12 centered">
+          <h2>A Subhead About This Section of Anita's Story</h2>
+          <p class="body-reg">According to Hajivandi, morning meals like this one were the standard for coal miners,
+            who, with their
+            integral place in the national union workers movement of the early 1900s. are an essential part of
+            Appalachian history. Like the coal miners,
+            Hajivandi said that many Appalachian folks like to enjoy a big, filling breakfast before setting out to
+            conquer a day of hard work. </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-6 ">
+          <img src="imgs/Swanson_SOA_Anita_022421-3.jpg" class="art-img-5 imag-pos-4" alt="anita and her husband">
+        </div>
+        <div class="col-6">
+          <img src="imgs/Swanson_SOA_Anita_022421-4.jpg" class="art-img-6 imag-pos-6" alt="anita and her husband">
+        </div>
+      </div>
+    </div>
+    <div class="container" id="anita2">
+      <div class="row">
+        <div class="col-lg-4">
+          <p class="pull-quote-2 grey-type imag-pos-5"><span class="yellow-type med">"</span>"I grew up on a great
+            farm...a hundred acres. We ran wild.. I had a great life", she said, remniniscing her adolescent years. "I
+            really embrace it. I think it was a wonderful childhood. It was a childhood of work... you work hard, you
+            play hard."<span class="yellow-type med">"</span>
+
+            <p class="pull-quote-cap imag-pos-5">-Anita
+              Hajivandi</p>
+        </div>
+        <div class="col-lg-8 white-type imag-pos-5 merge">
+          <img class="img-fluid img-pos art-img-7 imag-pos-5" src="imgs/Swanson_SOA_Anita-13.jpg"
+            alt="anita in the kitchen">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="anita3" class="bg-color2">
+    <div class="container-fluid">
+      <div class="col-12">
+        <img src="imgs/Swanson_SOA_Anita.jpg" class="art-img-4 imag-pos-7" alt="anita and her husband at worship">
+        <p class="black-type left-body-2">
+          "I love coooking. I enjoy helping people you know, thats why I think
+          I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
+          really. And truly, I never dremaed I'd be managing a food pantry. But it's very
+          satisfying to know that you made a differenece".
+        </p>
+        <p></p>
+      </div>
+      <div class="col">
+        <p class="left-body-2 black-type ">
+          "Rarely Was it - I mean, never was it - pancakes or cereal. That might be a treat every once and a while, but
+          it was the same because you know people work on a farm," she said. "They work in coal mines. They ate a big,
+          hearty, heavy breakfast."</p>
+        <p></p>
+        <p class="right-body-1 black-type">
+          Hajivandi's childhood memories of life on a farm are a significant inspiration to the cuisine that she
+          prepares today. To her, preparing and eating this food is a gateway to an open table, welcoming anyone and
+          everyone, which is why she dedicates so much of her time to the food pantry. Before the coronavirus altered
+          life as we knew it, her culinary skills were brought to the kitchen to prepare meals for visitors to enjoy and
+          open the doors to the church for everyone to come in for a feast. Bringing together the community with food is
+          one thing, but to cook the food with love in this sense carries a meaning greater than anything else. It's
+          cooking with intention that creates meaningful and lasting connections.
+        </p>
+        <p></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- tradition -->
+
+  <div class="container-fluid parallax-img-2" id="tradition">
+    <div class="row anita">
+
+      <div class="col-md-12 center">
+
+        <h2 class="subhead2 more-padding2">HELPING HANDS</h2>
+        <hr>
+        </hr>
+        </h2>
+        <p class="story-pro-subhead2">APPALACHIAN CUISINE IS RICH IN FOOD, TRADITION, AND COMMUNITY
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- footer -->
+  <footer class="bkgd-dark">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-">
+          <p>Data-Visual © 2019</p>
+        </div>
+        <div class="col">
+          <p class="float-right">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Back to top</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JavaScript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
+  <script src='https://unpkg.com/jquery/dist/jquery.min.js'></script>
+  <script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
+  <script src='https://unpkg.com/bootstrap/dist/js/bootstrap.min.js'></script>
+
+  <!-- project JavaScript dependencies -->
+  <script src="js/jquery.easing.min.js"></script>
+  <script src="js/scrolling.js"></script>
+
+  <!-- internal JavaScript -->
+  <script>
+    // window event that returns scrollspy target on scroll
+    // use this 'callback' function to add effects...                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  target
+    $(window).on('activate.bs.scrollspy', function (e, obj) {
+      console.log(obj.relatedTarget);
+
+      // #community triggers animation using css transition
+      if (obj.relatedTarget == '#anita1') {
+        $('.img-pos').addClass('img-pos-2');
+      } else {
+        $('.img-pos').removeClass('img-pos-2');
+      }
+      if (obj.relatedTarget == '#anita1') {
+        $('.image-pos').addClass('image-pos-2');
+      } else {
+        $('.image-pos').removeClass('image-pos-2');
+      }
+
+
+      if (obj.relatedTarget == '#anita') {
+        $('.imag-pos-3').addClass('image-pos-3');
+      } else {
+        $('.imag-pos-3').removeClass('image-pos-3');
+      }
+
+
+      if (obj.relatedTarget == '#anita_subhead') {
+        $('.imag-pos-4').addClass('image-pos-4');
+      } else {
+        $('.imag-pos-4').removeClass('image-pos-4');
+      }
+
+      if (obj.relatedTarget == '#anita_subhead') {
+        $('.imag-pos-6').addClass('image-pos-6');
+      } else {
+        $('.imag-pos-6').removeClass('image-pos-6');
+      }
+
+
+      if (obj.relatedTarget == '#anita2') {
+        $('.imag-pos-5').addClass('image-pos-5');
+      } else {
+        $('.imag-pos-5').removeClass('image-pos-5');
+      }
+
+
+      if (obj.relatedTarget == '#anita3') {
+        $('.imag-pos-7').addClass('image-pos-7');
+      } else {
+        $('.imag-pos-7').removeClass('image-pos-7');
+      }
+    });
+  </script>
 
 </body>
-<!-- Bootstrap JavaScript dependencies: first jQuery, then Popper.js, then Bootstrap JS -->
-<script src='https://unpkg.com/jquery/dist/jquery.min.js'></script>
-<script src='https://unpkg.com/popper.js/dist/umd/popper.min.js'></script>
-<script src='https://unpkg.com/bootstrap/dist/js/bootstrap.min.js'></script>
-
-<!-- project JavaScript dependencies -->
-<script src="js/jquery.easing.min.js"></script>
-<script src="js/scrolling.js"></script>
-
-<!-- Mapbox GL JS -->
-<script></script>
-
-<script>
-    //Get the button:
-    mybutton = document.getElementById("myBtn");
-
-    // When the user scrolls down 20px from the top of the document, show the button
-    window.onscroll = function() {scrollFunction()};
-
-    function scrollFunction() {
-      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-        mybutton.style.display = "block";
-      } else {
-        mybutton.style.display = "none";
-      }
-    }
-
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-      document.body.scrollTop = 0; // For Safari
-      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-    }
-    </script>
 
 </html>
