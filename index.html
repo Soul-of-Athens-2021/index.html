@@ -131,7 +131,7 @@
 
     /*background images*/
     .bkgd-img {
-      background-image: url(imgs/018.jpg);
+      background-image: url(imgs/01.jpg);
       background-attachment: fixed;
       background-position: bottom;
       background-repeat: no-repeat;
@@ -226,23 +226,20 @@
     }
 
     .pull-quote-1 {
-      float: right;
+      padding: none;
       text-align: left;
       font-size: 35px;
       font-weight: 700;
       font-style: italic;
-      margin-top: 40px;
     }
 
     .pull-quote-2 {
-      float: right;
       text-align: left;
-      font-size: 30px;
+      font-size: 25px;
       font-weight: 700;
       font-style: italic;
       margin-right: 95px;
-      margin-left: -120px;
-      margin-top: 30px;
+      margin-left: -50px;
     }
 
     .pull-quote-3 {
@@ -260,8 +257,9 @@
     /*article images*/
     .art-img-1 {
       float: right;
-      margin-left: 10px;
+      margin-left: 20px;
       width: 800px;
+      padding-bottom: 25px;
     }
 
     .art-img-2 {
@@ -285,15 +283,17 @@
     }
 
     .art-img-5 {
-      float: right;
-      width: 600px;
-      margin-left: 100px;
+      width: 300px;
+      margin-bottom: 5px;
+    }
 
+    .art-img-8 {
+      width: 300px;
       margin-bottom: 5px;
     }
 
     .art-img-6 {
-      width: 600px;
+      width: 300px;
       margin-bottom: 5px;
 
     }
@@ -301,8 +301,9 @@
     .art-img-7 {
       float: right;
       margin-bottom: 5px;
-      margin-right: 50px;
       margin-left: 10px;
+      width: 75%;
+      margin-right: 40px;
     }
 
     /*spacing*/
@@ -473,6 +474,13 @@
 
     .bg-color2 {
       background-color: #ffffff;
+
+    }
+
+    .bg-color3 {
+      background-color: #ffffff;
+      padding-top: 20px;
+      padding-bottom: 50px;
     }
 
     hr {
@@ -506,6 +514,16 @@
       height: 500px;
     }
 
+    .parallax-img-3 {
+      background-image: url(imgs/topographic.pdf);
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 500px;
+    }
+
+
     .anita hr {
       width: 300px;
     }
@@ -525,19 +543,39 @@
     }
 
     .about-border {
-    display: block;
-    width: 400px;
-    height: 3px;
-    background: white;
-    margin: 40px;
-    margin-top: 2px;
-    margin-bottom: 20px;
-}
+      display: block;
+      width: 400px;
+      height: 3px;
+      background: white;
+      margin: 40px;
+      margin-top: 2px;
+      margin-bottom: 20px;
+    }
 
-h4 {
-  font-size: 13px;
-  font-style: italic;
-}
+    h4 {
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    .bg-img {
+      background-image: url(imgs/topographic.png);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 90%;
+      min-height: 500px;
+    }
+
+    .text-format {
+      padding: 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .top-room {
+      margin-top: 75px;
+    }
   </style>
 
 </head>
@@ -557,9 +595,9 @@ h4 {
 
       <div class="navbar-collapse collapse collapse w-100 order-3 dual-collapse2" id="navbarResponsive">
         <ul class="navbar-nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link js-scroll-trigger" href="#page-top">Logo Here</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#page-top">Logo Here</a>
+          </li>
         </ul>
         <ul class="navbar-nav nav-pills ml-auto">
           <li class="nav-item">
@@ -679,12 +717,13 @@ h4 {
       </div>
     </div>
   </div>
-  <section class="bg-color2">
-    <div class="container-fluid">
+  <section class="bg-img">
+    <div class="container bg-color2">
       <div class="row">
 
-        <div class="col-12 white-type">
-          <p class="left-body-1 black-type">The Savory Aroma of pork and Sausage, the sight of sweet sorghum
+        <div class="col-12 text-format">
+          <p class="left-body-1 text-formnat black-type">The Savory Aroma of pork and Sausage, the sight of sweet
+            sorghum
             molasses mixed with creamy butter, and the taste of it all transports Anuita Hajvandi
             baclk to the kitchen of her rural Appalachian home where her grandmother would cook
             hearty and traditional meals from recipes passed down through generations. </p>
@@ -699,75 +738,64 @@ h4 {
     </div>
     <div class="container" id="anita1">
       <div class="row">
-        <div class="col-lg-4">
-          <p class="pull-quote-1 grey-type image-pos"><span class="yellow-type big">"</span>I love coooking. I enjoy
+        <div class="col-lg-12 bg-color2 container" id="anita1">
+          <img class="img-fluid img-pos art-img-1" src="imgs/Swanson_SOA_Anita-12.jpg" alt="anita in the kitchen">
+          <p class="pull-quote-1 grey-type image-pos text-format"><span class="yellow-type big">"</span>I love
+            cooking. I
+            enjoy
             helping people you know, thats why I think
             I'm drawn to the food pantry<span class="yellow-type big">"</span>
 
-            <p class="pull-quote-cap image-pos">-Anita
-              Hajivandi</p>
+            <span class="pull-quote-cap image-pos">-Anita
+              Hajivandi</span></p>
         </div>
-        <div class="col-lg-8 white-type image-pos merge">
-          <img class="img-fluid img-pos art-img-1" src="imgs/Swanson_SOA_Anita-12.jpg" alt="anita in the kitchen">
+        <div class="col bg-color2" id="anita">
+          <img src="imgs/Swanson_SOA_Anita-5.jpg" class="art-img-4 imag-pos-3" alt="anita and her husband">
+          <p class="black-type left-body-2">
+            "I love coooking. I enjoy helping people you know, thats why I think
+            I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
+            really. And truly, I never dremaed I'd be managing a food pantry. But it's very
+            satisfying to know that you made a differenece".
+          </p>
+          <p class="left-body-2 white-type ">
+            "Hajivandi said her cooking offers the reassurance that visitors need to get through each weel and a
+            connection that some may be longing for. She is certain that good food fosters a bond between those who
+            share
+            a meal together. No matter how the food is prepared or how it's recieved, it a gift that come with no
+            strings
+            attached - its about the natural act of giving and receiving."</p>
+          <p></p>
+          <p class="right-body-1 white-type">
+            "I think some of the greatest joys I've had have been when I've cooked for people," she said. "I've made a
+            lot
+            of friends... most people live the food I cook."
+          </p>
+          <p></p>
+          <p class="right-body-1 white-type">
+            A native of Rutland, Hajivandi is all too familiar with the region in which she was raised by her mother and
+            grandparents.
+          </p>
+          <p class="right-body-1 white-type">
+            "I grew up on a great farm... a hundred acres. We ran wild... I had a Great life," she said, reminiscing her
+            adolescent years. "I really embrace it. I think it was a wonderful childhood. It was a childhood of work...
+            you work hard, you play hard"
+          </p>
+          <p class="right-body-1 white-type">
+            "Growing up there was no influx of money pouring into Hajivandi's life, so going out to restaurants wasn't
+            an
+            option. The food she ate, like many other Appalachians, was harvested in the summer and preserved for fall
+            and
+            winter. It was the standard. The change of seasons controlled what was on the plate.
+          </p>
+          <p class="right-body-1 white-type">
+            But no matter the time of the year, the breakfast spread Hajivandi enjoyed as a child "seven days a week"
+            included coffee-fired pork with cured ham, sausage gravy biscuits, fired apples and eggs paired with a
+            piping
+            hot cup of coffee. To cool it down, hajivandi was taught to first pout the coffee into a saucer, then back
+            into its cup.
+          </p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="anita" class="bg-color2">
-    <div class="container-fluid">
-      <div class="col-12">
-        <img src="imgs/Swanson_SOA_Anita-5.jpg" class="art-img-4 imag-pos-3" alt="anita and her husband">
-        <p class="black-type left-body-2">
-          "I love coooking. I enjoy helping people you know, thats why I think
-          I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
-          really. And truly, I never dremaed I'd be managing a food pantry. But it's very
-          satisfying to know that you made a differenece".
-        </p>
-        <p></p>
-      </div>
-      <div class="col">
-        <p class="left-body-2 white-type ">
-          "Hajivandi said her cooking offers the reassurance that visitors need to get through each weel and a
-          connection that some may be longing for. She is certain that good food fosters a bond between those who share
-          a meal together. No matter how the food is prepared or how it's recieved, it a gift that come with no strings
-          attached - its about the natural act of giving and receiving."</p>
-        <p></p>
-        <p class="right-body-1 white-type">
-          "I think some of the greatest joys I've had have been when I've cooked for people," she said. "I've made a lot
-          of friends... most people live the food I cook."
-        </p>
-        <p></p>
-        <p class="right-body-1 white-type">
-          A native of Rutland, Hajivandi is all too familiar with the region in which she was raised by her mother and
-          grandparents.
-        </p>
-        <p class="right-body-1 white-type">
-          "I grew up on a great farm... a hundred acres. We ran wild... I had a Great life," she said, reminiscing her
-          adolescent years. "I really embrace it. I think it was a wonderful childhood. It was a childhood of work...
-          you work hard, you play hard"
-        </p>
-        <p class="right-body-1 white-type">
-          "Growing up there was no influx of money pouring into Hajivandi's life, so going out to restaurants wasn't an
-          option. The food she ate, like many other Appalachians, was harvested in the summer and preserved for fall and
-          winter. It was the standard. The change of seasons controlled what was on the plate.
-        </p>
-        <p class="right-body-1 white-type">
-          But no matter the time of the year, the breakfast spread Hajivandi enjoyed as a child "seven days a week"
-          included coffee-fired pork with cured ham, sausage gravy biscuits, fired apples and eggs paired with a piping
-          hot cup of coffee. To cool it down, hajivandi was taught to first pout the coffee into a saucer, then back
-          into its cup.
-        </p>
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="anita_subhead">
-    <div class="container">
-      <div clas="row">
-        <div class="col-12 centered">
+        <div class="col-12 centered bg-color2 text-format">
           <h2>A Subhead About This Section of Anita's Story</h2>
           <p class="body-reg">According to Hajivandi, morning meals like this one were the standard for coal miners,
             who, with their
@@ -776,65 +804,43 @@ h4 {
             Hajivandi said that many Appalachian folks like to enjoy a big, filling breakfast before setting out to
             conquer a day of hard work. </p>
         </div>
-      </div>
-    </div>
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-6 ">
-          <img src="imgs/Swanson_SOA_Anita_022421-3.jpg" class="art-img-5 imag-pos-4" alt="anita and her husband">
-        </div>
-        <div class="col-6">
-          <img src="imgs/Swanson_SOA_Anita_022421-4.jpg" class="art-img-6 imag-pos-6" alt="anita and her husband">
-        </div>
-      </div>
-    </div>
-    <div class="container" id="anita2">
-      <div class="row">
-        <div class="col-lg-4">
-          <p class="pull-quote-2 grey-type imag-pos-5"><span class="yellow-type med">"</span>"I grew up on a great
-            farm...a hundred acres. We ran wild.. I had a great life", she said, remniniscing her adolescent years. "I
-            really embrace it. I think it was a wonderful childhood. It was a childhood of work... you work hard, you
-            play hard."<span class="yellow-type med">"</span>
-
-            <p class="pull-quote-cap imag-pos-5">-Anita
-              Hajivandi</p>
-        </div>
-        <div class="col-lg-8 white-type imag-pos-5 merge">
+        <div class="col-lg-12 text-format bg-color2" id="anita2">
           <img class="img-fluid img-pos art-img-7 imag-pos-5" src="imgs/Swanson_SOA_Anita-13.jpg"
             alt="anita in the kitchen">
+          <p class="pull-quote-2 grey-type imag-pos-5"><span class="yellow-type med">"</span>I grew up on a great
+            farm...a hundred acres. We ran wild.. I had a great life", she said, remniniscing her adolescent years. "I
+            really embrace it. I think it was a wonderful childhood. It was a childhood of work... you work hard, you
+            play hard.<span class="yellow-type med">"</span> <span class="pull-quote-cap2 imag-pos-5">-Anita
+              Hajivandi</span></p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="anita3" class="bg-color2">
-    <div class="container-fluid">
-      <div class="col-12">
-        <img src="imgs/Swanson_SOA_Anita.jpg" class="art-img-4 imag-pos-7" alt="anita and her husband at worship">
-        <p class="black-type left-body-2">
-          "I love coooking. I enjoy helping people you know, thats why I think
-          I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
-          really. And truly, I never dremaed I'd be managing a food pantry. But it's very
-          satisfying to know that you made a differenece".
-        </p>
-        <p></p>
-      </div>
-      <div class="col">
-        <p class="left-body-2 black-type ">
-          "Rarely Was it - I mean, never was it - pancakes or cereal. That might be a treat every once and a while, but
-          it was the same because you know people work on a farm," she said. "They work in coal mines. They ate a big,
-          hearty, heavy breakfast."</p>
-        <p></p>
-        <p class="right-body-1 black-type">
-          Hajivandi's childhood memories of life on a farm are a significant inspiration to the cuisine that she
-          prepares today. To her, preparing and eating this food is a gateway to an open table, welcoming anyone and
-          everyone, which is why she dedicates so much of her time to the food pantry. Before the coronavirus altered
-          life as we knew it, her culinary skills were brought to the kitchen to prepare meals for visitors to enjoy and
-          open the doors to the church for everyone to come in for a feast. Bringing together the community with food is
-          one thing, but to cook the food with love in this sense carries a meaning greater than anything else. It's
-          cooking with intention that creates meaningful and lasting connections.
-        </p>
-        <p></p>
+        <div class="col-12 bg-color2" id="anita3">
+          <img src="imgs/Swanson_SOA_Anita.jpg" class="art-img-4 imag-pos-7" alt="anita and her husband at worship">
+          <p class="black-type left-body-2">
+            "I love coooking. I enjoy helping people you know, thats why I think
+            I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
+            really. And truly, I never dremaed I'd be managing a food pantry. But it's very
+            satisfying to know that you made a differenece".
+          </p>
+          <p></p>
+          <p class="left-body-2 black-type ">
+            "Rarely Was it - I mean, never was it - pancakes or cereal. That might be a treat every once and a while,
+            but
+            it was the same because you know people work on a farm," she said. "They work in coal mines. They ate a big,
+            hearty, heavy breakfast."</p>
+          <p></p>
+          <p class="right-body-1 black-type">
+            Hajivandi's childhood memories of life on a farm are a significant inspiration to the cuisine that she
+            prepares today. To her, preparing and eating this food is a gateway to an open table, welcoming anyone and
+            everyone, which is why she dedicates so much of her time to the food pantry. Before the coronavirus altered
+            life as we knew it, her culinary skills were brought to the kitchen to prepare meals for visitors to enjoy
+            and
+            open the doors to the church for everyone to come in for a feast. Bringing together the community with food
+            is
+            one thing, but to cook the food with love in this sense carries a meaning greater than anything else. It's
+            cooking with intention that creates meaningful and lasting connections.
+          </p>
+          <p></p>
+        </div>
       </div>
     </div>
   </section>
