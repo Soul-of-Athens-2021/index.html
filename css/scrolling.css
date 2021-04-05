@@ -278,6 +278,12 @@ body {
 	text-shadow: 2px 2px 4px #000000;
 }
 
+.story-pro-subhead-black {
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	color: #000;
+}
+
 .subhead2 {
 	font-family: Montserrat;
 	font-weight: 900;
