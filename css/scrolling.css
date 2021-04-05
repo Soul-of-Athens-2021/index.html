@@ -254,13 +254,17 @@ body {
 	margin-left: -50px;
 }
 
+/* padding */
+.padding-top-1 {
+	padding-top: 4rem;
+}
 
 .more-padding {
 	padding-top: 75px;
 }
 
 .more-padding2 {
-	padding-top: 150px;
+	padding-top: 18rem;
 }
 
 .xtra-padding {
@@ -271,6 +275,7 @@ body {
 	padding-bottom: 300px;
 }
 
+/* subhead */
 .story-pro-subhead {
 	font-family: 'PT Serif', serif;
 	font-style: italic;
