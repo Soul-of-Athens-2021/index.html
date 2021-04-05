@@ -191,6 +191,10 @@ body {
 	color: #bd8848;
 }
 
+.white-type {
+	color: #fff;
+}
+
 
 /* cards */
 .card {
@@ -259,6 +263,10 @@ body {
 	padding-top: 4rem;
 }
 
+.padding-top-2 {
+	padding-top: 7rem;
+}
+
 .more-padding {
 	padding-top: 75px;
 }
@@ -309,30 +317,30 @@ body {
 
 /* background images */
 .img-1 {
-	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	background-image: url(../imgs/Anita_HEADSHOT.jpeg);
 	opacity: 1.0;
 	background-color: #aaa;
-	height: 500px;
+	height: 600px;
 	background-position: top;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .img-2 {
-	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	background-image: url(../imgs/Burk_Kaylor9.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
-	height: 500px;
+	height: 600px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .img-3 {
-	background-image: url(../imgs/Swanson_SOA_03062021_Anita-22.jpg);
+	background-image: url(../imgs/Food_HEADSHOT.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
-	height: 500px;
+	height: 600px;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
