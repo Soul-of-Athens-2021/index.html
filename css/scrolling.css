@@ -30,6 +30,12 @@ h6 {
 	padding-top: 0.3rem;
 }
 
+p,
+.p {
+	font-family:'Montserrat', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+}
 
 /* media query related styles */
 /* styles for extra-small (mobile) devices */
