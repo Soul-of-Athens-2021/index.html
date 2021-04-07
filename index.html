@@ -18,6 +18,9 @@
   <!-- stylesheet -->
   <link href="css/scrolling.css" rel="stylesheet">
 
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="48x48" href="imgs/logo-favicon.png">
+
   <!-- internal CSS styles -->
   <style>
     /*img slide animations*/
@@ -497,6 +500,10 @@
       color: #ffffff;
     }
 
+    .btn-red {
+      color: #ed1f0f;
+    }
+
     .parallax-img-1 {
       background-image: url(imgs/Anita_HEADER.jpg);
       background-attachment: fixed;
@@ -558,14 +565,44 @@
       font-style: italic;
     }
 
-    .bg-img {
+    .bg-img-1 {
       background-image: url(imgs/Warner_KelliMayle-08.jpg);
       background-attachment: fixed;
       background-position: bottom;
       background-repeat: no-repeat;
       background-size: cover;
       opacity: 90%;
-      min-height: 500px;
+      min-height: 700px;
+    }
+
+    .bg-img-2 {
+      background-image: url(imgs/nathan_illustration.png);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 90%;
+      min-height: 700px;
+    }
+
+    .bg-img-3 {
+      background-image: url(imgs/Warner_KelliMayle-04.jpg);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 90%;
+      min-height: 700px;
+    }
+
+    .bg-img-4 {
+      background-image: url(imgs/Warner_MichellePetrel-02.jpg);
+      background-attachment: fixed;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-size: cover;
+      opacity: 90%;
+      min-height: 700px;
     }
 
     .text-format {
@@ -586,8 +623,9 @@
 <!-- navigation -->
     <nav class="navbar navbar-expand-md navbar-dark bg-color fixed-top" id="mainNav">
         <div class="container-fluid">
-
-            <a class="navbar-brand js-scroll-trigger" href="#page-top">Appalachian Cuisine</a>
+            <a class="navbar-brand js-scroll-trigger" href="#page-top">
+              <img src="imgs/logo-favicon.png" width="7%" height="7%" alt="Home">
+            </a>
             <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -628,11 +666,11 @@
     </div>
   </div>
 
-<div class="wrapper bg-color">
-  <div class="container padding-top-1">
-    <div class="row">
+<div class="wrapper bg-img-2">
+  <div class="container padding-top-2 padding-bottom-2">
+    <div class="row white-background padding-sm">
       <div class="col">
-        <h1 class="centered">An Open Table</h1>
+        <h1 class="centered h1-color padding-top-sm padding-btm-sm">An Open Table</h1>
         <p>Among the foothills of Appalachia, here in Southeast Ohio, a deep culinary tradition pulls from many nationalities and eras of history. Scotch-Irish, German, African and Native American cultures melded to develop the region’s eclectic cuisine. The logging and coal mining industries also affected the cultural ties with food. Preparing large group meals for breakfast to feed men headed into mines influenced traditions of sharing and connection. Focused on using local resources, these food traditions have now been passed down for generations.</p>
 
         <p>Anita Hajivandi dedicates herself to the community <b>connection</b> she grew up with in West Virginia. She co-directs the food pantry of River of Life Church in Rutland, Ohio. Sharing food with others is part of her being.</p>
@@ -658,9 +696,7 @@
                       <hr>
                       </hr>
                     </h2>
-                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
-                      elit.
-                    </p>
+                    <p class="story-pro-subhead">Athens chef donates time to feed her community</p>
 
                     <a class="btn btn-brown btn-sm" href="#community" role="button">Read More</a>
                   </div>
@@ -676,11 +712,9 @@
                       <hr>
                       </hr>
                     </h2>
-                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
-                      elit.
-                    </p>
+                    <p class="story-pro-subhead">Family helps grandmother continue her love of cooking</p>
 
-                    <a class="btn btn-brown btn-sm" href="about" role="button">Read More</a>
+                    <a class="btn btn-brown btn-sm" href="#tradition" role="button">Read More</a>
                   </div>
                 </div>
               </div>
@@ -694,11 +728,9 @@
                       <hr>
                       </hr>
                     </h2>
-                    <p class="story-pro-subhead">Lorem ipsum dolor sit, amet consectetur adipisicing
-                      elit.
-                    </p>
+                    <p class="story-pro-subhead">Locally resourced staples make up traditional cuisine</p>
 
-                    <a class="btn btn-brown btn-sm" href="#about" role="button">Read More</a>
+                    <a class="btn btn-brown btn-sm" href="#food" role="button">Read More</a>
                   </div>
                 </div>
               </div>
@@ -709,7 +741,9 @@
       </div>
     </div>
   </div>
+
   <!-- community -->
+
   <div class="container-fluid parallax-img-1" id="community">
     <div class="row anita">
 
@@ -724,7 +758,7 @@
       </div>
     </div>
   </div>
-  <section class="bg-img">
+  <section class="bg-img-1">
     <div class="container bg-color2">
       <div class="row">
 
@@ -746,7 +780,7 @@
     <div class="container" id="anita1">
       <div class="row">
         <div class="col-lg-12 bg-color2 container" id="anita1">
-          <img class="img-fluid img-pos art-img-1" src="imgs/Anita_01.jpg" alt="anita in the kitchen">
+          <img class="img-fluid img-pos art-img-1" src="imgs/Anita_11.jpg" alt="Anita at her home in Rutland, Ohio.">
           <p class="pull-quote-1 grey-type image-pos text-format"><span class="yellow-type big">"</span>I love
             cooking. I
             enjoy
@@ -757,7 +791,7 @@
               Hajivandi</span></p>
         </div>
         <div class="col bg-color2" id="anita">
-          <img src="imgs/Anita_01.jpg" class="art-img-4 imag-pos-3" alt="anita and her husband">
+          <img src="imgs/Anita_01.jpg" class="art-img-4 imag-pos-3" alt="Anita and her husband.">
           <p class="black-type left-body-2">
             "I love coooking. I enjoy helping people you know, thats why I think
             I'm drawn to the food pantry," Hajivandi said. "I kind of fell into it by accident,
@@ -812,8 +846,8 @@
             conquer a day of hard work. </p>
         </div>
         <div class="col-lg-12 text-format bg-color2" id="anita2">
-          <img class="img-fluid img-pos art-img-7 imag-pos-5" src="imgs/Swanson_SOA_Anita-13.jpg"
-            alt="anita in the kitchen">
+          <img class="img-fluid img-pos art-img-7 imag-pos-5" src="imgs/Anita_11.jpg"
+            alt="Anita at her home in Rutland, Ohio">
           <p class="pull-quote-2 grey-type imag-pos-5"><span class="yellow-type med">"</span>I grew up on a great
             farm...a hundred acres. We ran wild.. I had a great life", she said, remniniscing her adolescent years. "I
             really embrace it. I think it was a wonderful childhood. It was a childhood of work... you work hard, you
@@ -873,12 +907,12 @@
     </div>
   </div>
 
-  <section class="bg-img">
+  <section class="bg-img-3">
     <div class="container bg-color2">
       <div class="row">
 
-        <div class="col-12 text-format">
-          <p class="left-body-1 text-format black-type">It is a cool Sunday afternoon, and the smell of baking bread wafts all throughout the house. Bowls clink against each other as flour spills onto the countertops. The sounds of a volleyball game echo in from a television in the living room as Kathy Witten, 67, brushes her granddaughter’s hair behind her shoulder. Together, they properly mold and place homemade biscuits on a baking sheet. Witten’s family, including her daughter, son-in-law and grandchildren, have gathered for brunch — the first time since the pandemic began more than a year ago.</p>
+        <div class="col-12">
+          <p class="left-body-1 black-type">It is a cool Sunday afternoon, and the smell of baking bread wafts all throughout the house. Bowls clink against each other as flour spills onto the countertops. The sounds of a volleyball game echo in from a television in the living room as Kathy Witten, 67, brushes her granddaughter’s hair behind her shoulder. Together, they properly mold and place homemade biscuits on a baking sheet. Witten’s family, including her daughter, son-in-law and grandchildren, have gathered for brunch — the first time since the pandemic began more than a year ago.</p>
           <p class="left-body-1 black-type">Kathy Witten and her family have always enjoyed Sunday brunches as an occasion for the family to come together and enjoy their favorite dishes, but since Witten was diagnosed with Parkinson’s disease in 2018, brunch has transformed from simply enjoying a hearty meal with one another to collaborating in what has become an intergenerational cooking event that has its roots in Appalachian cuisine. They also began meeting every week, and they now use this time together to instill a love of meals made from scratch in the next generation. “When I cook with my family I feel like… we create a strong bond,” said Witten. “It makes me feel better having them here and helping me.”</p>
         </div>
       </div>
@@ -896,7 +930,7 @@
             <span class="pull-quote-cap image-pos">-Anita
               Hajivandi</span></p>
         </div>
-        <div class="col bg-color2" id="anita">
+        <div class="col-12 bg-color2" id="anita">
           <img src="imgs/Swanson_SOA_Anita-5.jpg" class="art-img-4 imag-pos-3" alt="anita and her husband">
           <p class="black-type left-body-2">
             Before her diagnosis, Witten would prepare everything by herself. But the shaky-hands symptom of Parkinson’s disease, as well as a recent injury to her left hand, has hindered the matriarchal chef’s mobility. Even though she still has the desire to feed her family, she now needs more assistance in order to make the meals they love the most. Her daughter, Mary-Beth Kaylor, 40, and granddaughters, Morgan and Madison Kaylor, both 14, have proven to be the most helpful in the kitchen.
@@ -962,11 +996,11 @@
     </div>
   </div>
 
-  <section class="bg-img">
+  <section class="bg-img-4">
     <div class="container bg-color2">
       <div class="row">
 
-        <div class="col-12 text-format">
+        <div class="col-12">
           <p class="left-body-1 text-format black-type">The Appalachian Mountains region, Appalachia or The Hills as it’s commonly called, is an incredibly diverse section of the United States with many different people and just as many different foods. However, despite the diversity within a region that encompasses 13 states, and a cuisine that defies any one encompassing description, there are common themes and the idea of “farm to table” is probably the most consistent of these.</p>
           <p class="left-body-1 black-type">Many families rely heavily on local, readily available ingredients rather than processed meats and produce as well as affordable and bulk ingredients due to their financial situations. Meals consist of what can be grown or raised on the farm and food is eaten fresh in season and canned or preserved for the winter.</p>
         </div>
