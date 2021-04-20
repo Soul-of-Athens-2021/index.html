@@ -32,7 +32,7 @@ h6 {
 
 p,
 .p {
-	font-family:'Montserrat', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
 	font-weight: 400;
 }
@@ -212,8 +212,8 @@ body {
 	color: #bd8848;
 }
 
-.white-type {
-	color: #fff;
+.black-type {
+	color: #000;
 }
 
 .white-background {
@@ -283,11 +283,17 @@ body {
 	margin-left: -50px;
 }
 
-/* padding */
-.padding-copy {
-	padding-left: 15rem;
-	padding-right: 15rem;
+
+.pull-quote-cap3 {
+	font-family: 'PT Serif', serif;
+	font-style: italic;
+	font-size: 30px;
+	margin-top: 30px;
+	margin-left: 10px;
 }
+
+/* padding */
+
 
 .padding-sm {
 	padding-top: .7rem;
@@ -382,7 +388,7 @@ body {
 
 /* background images */
 .img-1 {
-	background-image: url(../imgs/Anita_HEADSHOT.jpeg);
+	background-image: url(../imgs/Anita_headshot.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
@@ -392,7 +398,7 @@ body {
 }
 
 .img-2 {
-	background-image: url(../imgs/Burk_Kaylor9.jpg);
+	background-image: url(../imgs/Burk_KaylorHeadshot.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
@@ -402,7 +408,7 @@ body {
 }
 
 .img-3 {
-	background-image: url(../imgs/Food_HEADSHOT.jpg);
+	background-image: url(../imgs/Foodheadshot.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
