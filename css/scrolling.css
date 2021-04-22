@@ -9,6 +9,10 @@
 	--black: #222;
 }
 
+.jumbotron {
+  background-image: url("..imgs/Cuisine_HEADER_01.jpg");
+  background-size: cover;
+}
 
 /* google font style */
 h1,
@@ -301,7 +305,9 @@ body {
 }
 
 /* padding */
-
+.nav-button-padding {
+	padding-left: 1rem;
+}
 
 .padding-sm {
 	padding-top: .7rem;
