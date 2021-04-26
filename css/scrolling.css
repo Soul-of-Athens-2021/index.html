@@ -9,10 +9,6 @@
 	--black: #222;
 }
 
-.jumbotron {
-  background-image: url("..imgs/Cuisine_HEADER_01.jpg");
-  background-size: cover;
-}
 
 /* google font style */
 h1,
@@ -76,6 +72,8 @@ section {
 footer {
 	padding: 2rem 1rem 4rem;
 }
+
+@media
 
 /* styles for small devices */
 @media (min-width: 300px) {
@@ -173,17 +171,18 @@ body {
 	margin-top: 56px;
 }
 
-
 /* nav */
 .nav-pills .nav-link.active {
 
 	background-color: var(--md-color);
+	flex-basis: none;
 }
 
 .navbar-nav .nav-link {
 	padding-left: 14px;
 	color: #ABABAB;
 	font-weight: bold;
+	flex-basis: none;
 }
 
 
@@ -269,6 +268,7 @@ body {
 	color: #ffffff;
 	font-size: 50px;
 	text-shadow: 2px 2px 4px #000000;
+	padding-top: 250px;
 }
 
 .pull-quote-cap {
@@ -278,6 +278,8 @@ body {
 	margin-top: 30px;
 	margin-left: 0px;
 }
+
+
 
 .pull-quote-cap2 {
 	font-family: 'PT Serif', serif;
@@ -305,9 +307,7 @@ body {
 }
 
 /* padding */
-.nav-button-padding {
-	padding-left: 1rem;
-}
+
 
 .padding-sm {
 	padding-top: .7rem;
@@ -402,7 +402,7 @@ body {
 
 /* background images */
 .img-1 {
-	background-image: url(../imgs/Anita_HEADSHOT2.jpg);
+	background-image: url(../imgs/Button_COMMUNITY.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
@@ -412,7 +412,7 @@ body {
 }
 
 .img-2 {
-	background-image: url(../imgs/Burk_Kaylor9.jpg);
+	background-image: url(../imgs/button_TRADITION.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
@@ -422,7 +422,7 @@ body {
 }
 
 .img-3 {
-	background-image: url(../imgs/Food_HEADSHOT.jpg);
+	background-image: url(../imgs/Button_FOOD.jpg);
 	opacity: 1.0;
 	background-color: #aaa;
 	height: 600px;
