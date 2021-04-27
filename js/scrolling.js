@@ -19,5 +19,5 @@ $('.js-scroll-trigger').click(function () {
 // activate scrollspy to add active class to navbar items
 $('body').scrollspy({
   target: '#mainNav',
-  offset: 300
+  offset: 700
 });
