@@ -55,7 +55,7 @@ p,
 /* media query related styles */
 /* styles for extra-small (mobile) devices */
 h1 {
-	font-size: 4rem;
+	font-size: 3rem;
 	line-height: 2.7rem;
 	letter-spacing: 1px;
 	text-align: left;
@@ -338,6 +338,10 @@ body {
 
 .padding-top-2 {
 	padding-top: 7rem;
+}
+
+.padding-top-3 {
+	padding-top: 15px;
 }
 
 .padding-bottom-1 {
